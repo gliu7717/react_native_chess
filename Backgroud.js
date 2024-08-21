@@ -7,7 +7,7 @@ const TOPMARGIN = (height - width) /2
 
 const Background = () => {
     return (
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1,backgroundColor:"transparent" }}>
         <Image source = {require("./assets/board.png")} style = {styles.board} />
       </View>
     );
@@ -18,9 +18,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   board: {
-    marginTop: TOPMARGIN,
     width: SIZE,
     height: SIZE,
+    backgroundColor:"transparent"
   },
 });
 export default Background;
