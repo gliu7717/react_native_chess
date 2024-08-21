@@ -3,7 +3,7 @@ import { View, StyleSheet,Dimensions,Image} from "react-native";
 
 const { width,height } = Dimensions.get("window");
 export const SIZE = width;
-const TOPMARGIN = (height - width) /2
+const TOPMARGIN = (height - width) /2 -  width / 9 + 10
 
 const Background = () => {
     return (
@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   board: {
+    marginTop:TOPMARGIN,
     width: SIZE,
     height: SIZE,
     backgroundColor:"transparent"

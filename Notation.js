@@ -27,7 +27,7 @@ export const toTranslation = (to) => {
 
 export const toPosition = ({ x, y }) => {
   "worklet";
-  const col = String.fromCharCode(97 + Math.round(x / SIZE));
-  const row = `${8 - Math.round(y / SIZE)}`;
+  const col = String.fromCharCode(97 + Math.round( (x ) / SIZE));
+  const row = `${8 - Math.round( (y) / SIZE)}`;
   return `${col}${row}`;
 };

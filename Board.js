@@ -39,6 +39,7 @@ const Board = () => {
   return (
     <View style={styles.container}>
       <Background />
+      <View style={styles.container1}>
       {state.board.map((row, y) =>
         row.map((piece, x) => {
           if (piece !== null) {
@@ -56,6 +57,7 @@ const Board = () => {
           return null;
         })
       )}
+      </View>
     </View>
   );
 };
@@ -66,6 +68,12 @@ const styles = StyleSheet.create({
       height: width,
       backgroundColor:"transparent"
     },
+    container1: {
+      margin: 20,
+      flex: 1,
+      backgroundColor:"transparent"
+    },
+
 });  
 
 export default Board;
